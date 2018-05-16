@@ -23,7 +23,8 @@ const innerMenu = {
         {link: '/getting-started#quickStart', title: 'Quick Start'}
     ],
     '/css': [
-        {link: '/css#typography', title: 'Typography'}
+        {link: '/css#typography', title: 'Typography'},
+        {link: '/css#grid', title: 'Grid'}
     ]
 }
 

@@ -12,8 +12,8 @@ $screen-sizes: (
 
 /* ===== Typography ===== */
 
-$default-font-family:     Roboto, 'Helvetica Neue', Arial, sans-serif;
-$default-text-color:      #373a3c;
+$default-font-family:     Roboto, 'Helvetica Neue', Arial, sans-serif !default;
+$default-text-color:      #373a3c !default;
 
 $body-font-family:        $default-font-family !default;
 $body-font-size:          16 !default;
@@ -48,8 +48,8 @@ $error:                   $red !default;
 /* Gray Colors */
 
 $light-gray:              #eceeef !default;
-$medium-gray:             #BDB9BD !default;
-$dark-gray:               #333333 !default;
+$medium-gray:             #dfe3e9 !default;
+$dark-gray:               #BDB9BD !default;
 
 /* Colors Map */
 

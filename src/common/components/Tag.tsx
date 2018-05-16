@@ -20,7 +20,7 @@ export default class Tag extends React.Component<Props, {}> {
         const {name, className} = this.props
 
         return (
-            <div>
+            <div className={cx('tag')}>
                 <span className="text-red">{'<'}{name}</span>
                 {!!className && <span className="text-blue">{' class'}</span>}
                 {!!className &&

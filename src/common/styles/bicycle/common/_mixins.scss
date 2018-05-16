@@ -72,12 +72,6 @@
   }
 }
 
-@mixin svg($icon, $color) {
-  background: url("../icons/symbol/svg/sprite.symbol.svg#" + $icon) no-repeat;
-  background-size: 100% auto;
-  fill: $color;
-}
-
 @mixin placeholder() {
   &:-ms-input-placeholder {
     @content
@@ -93,77 +87,5 @@
   }
   &::placeholder {
     @content
-  }
-}
-
-@mixin ml($number) {
-  [dir=ltr] & {
-    margin-left: $number + px;
-  }
-  [dir=rtl] & {
-    margin-right: $number + px;
-  }
-}
-
-@mixin mr($number) {
-  [dir=ltr] & {
-    margin-right: $number + px;
-  }
-  [dir=rtl] & {
-    margin-left: $number + px;
-  }
-}
-
-@mixin pl($number) {
-  [dir=ltr] & {
-    padding-left: $number + px;
-  }
-  [dir=rtl] & {
-    padding-right: $number + px;
-  }
-}
-
-@mixin pr($number) {
-  [dir=ltr] & {
-    padding-right: $number + px;
-  }
-  [dir=rtl] & {
-    padding-left: $number + px;
-  }
-}
-
-@mixin text-left() {
-  [dir=ltr] & {
-    text-align: left;
-  }
-  [dir=rtl] & {
-    text-align: right;
-  }
-}
-
-@mixin text-right() {
-  [dir=ltr] & {
-    text-align: right;
-  }
-  [dir=rtl] & {
-    text-align: left;
-  }
-}
-
-@mixin left($number) {
-  [dir=ltr] & {
-    left: $number + px;
-  }
-  [dir=rtl] & {
-    right: $number + px;
-  }
-}
-
-@mixin right($number) {
-  [dir=ltr] & {
-    right: $number + px;
-  }
-  [dir=rtl] & {
-    left: $number + px;
   }
 }

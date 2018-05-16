@@ -1,5 +1,4 @@
 /* ===== Common ===== */
-@import "mixins";
 
 /* Basic */
 
@@ -46,7 +45,7 @@ p {
 }
 
 a {
-  color: #007aff;
+  color: $primary;
   text-decoration: none;
   outline: none;
   &:hover {

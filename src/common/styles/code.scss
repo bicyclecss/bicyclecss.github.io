@@ -1,8 +1,8 @@
 .line-numbers {
   position: relative;
-  margin: 0 0 25px;
-  padding: 20px 10px;
-  border: 1px solid #eceeef;
+  margin: 0 0 30px;
+  padding: 20px 10px 20px 50px;
+  border: 1px solid $medium-gray;
   background-color: #fafafa;
   border-radius: 3px;
 
@@ -12,30 +12,26 @@
     top: 0;
     bottom: 0;
     left: 40px;
-    border-right: 1px solid #eceeef;
+    border-right: 1px solid $medium-gray;
   }
 
   > code {
-
-    > div {
-      position: relative;
-      counter-increment: line;
-      padding-left: 40px;
-      height: 20px;
-      line-height: 20px;
-
-      &:before {
-        content: counter(line);
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 20px;
-        color: #ccc;
-        text-align: right;
-      }
-    }
+    line-height: 20px;
   }
+}
+
+.numbers {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 30px;
+}
+
+.number {
+  display: block;
+  text-align: right;
+  color: #ccc;
+  line-height: 20px;
 }
 
 .copy {

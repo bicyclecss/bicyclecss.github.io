@@ -17,7 +17,7 @@ export default class Css extends React.Component<{}, {}> {
                     elements are styled and enhanced with extensible classes.
                 </Banner>
                 <Typography />
-                {/*<Grid />*/}
+                <Grid />
                 {/*<Helper />*/}
             </div>
         )

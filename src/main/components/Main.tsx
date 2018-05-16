@@ -20,6 +20,7 @@ export default class Main extends React.Component<{}, State> {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         window.addEventListener('scroll', this.handleScrollWindow)
     }
 
