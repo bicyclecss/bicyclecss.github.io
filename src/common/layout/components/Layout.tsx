@@ -9,6 +9,12 @@ import Footer from './Footer'
 
 interface State {
     isShowInnerMenu: boolean
+    activeLink: string
+}
+
+interface InnerMenuItem {
+    link: string
+    title: string
 }
 
 const innerMenu = {
@@ -21,7 +27,8 @@ const innerMenu = {
 export default class Layout extends React.Component<RouteProps, State> {
 
     state = {
-        isShowInnerMenu: false
+        isShowInnerMenu: false,
+        activeLink: ''
     }
 
     componentDidMount() {
@@ -45,13 +52,13 @@ export default class Layout extends React.Component<RouteProps, State> {
 
     render() {
         const {location} = this.props
-        const {isShowInnerMenu} = this.state
+        const {isShowInnerMenu, activeLink} = this.state
 
         return (
             <main>
                 <Navigation
                     isShowInnerMenu={isShowInnerMenu}
-                    location={location}
+                    activeLink={activeLink}
                     innerMenu={(innerMenu as any)[location.pathname]}
                 />
                 {this.props.children}
@@ -64,14 +71,41 @@ export default class Layout extends React.Component<RouteProps, State> {
         const scroll = new SmoothScroll()
         const top = (document.querySelector(anchor) as any).offsetTop - 80
 
-        scroll.animateScroll(top, {easing: 'easeInOutQuart'})
+        scroll.animateScroll(top, {
+            easing: 'easeInOutQuart'
+        })
     }
 
     private handleScrollWindow = () => {
         const scrollTop = window.scrollY
+        const menu = (innerMenu as any)[this.props.location.pathname]
+
+        if (menu) {
+            this.handleSetActiveLink(scrollTop, menu)
+        }
 
         this.setState({
             isShowInnerMenu: scrollTop > 100
+        })
+    }
+
+    private handleSetActiveLink = (scrollTop: number, menu: InnerMenuItem[]) => {
+        let activeLink: string = ''
+
+        menu.map((item: InnerMenuItem) => {
+            const hash = item.link.split('#')[1]
+            const refElement = document.getElementById(hash)
+
+            if (
+                refElement.offsetTop <= scrollTop + 80 &&
+                refElement.offsetTop + refElement.getBoundingClientRect().height > scrollTop + 80
+            ) {
+                activeLink = item.link
+            }
+        })
+
+        this.setState({
+            activeLink: activeLink
         })
     }
 }

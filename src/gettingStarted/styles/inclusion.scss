@@ -1,7 +1,10 @@
 .file-tree {
   list-style: none;
-  padding-left: 25px;
   margin-top: 50px;
+
+  @include from-screen-size(md) {
+    padding-left: 25px;
+  }
 
   li {
     padding: 4px 0;

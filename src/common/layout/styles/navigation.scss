@@ -11,7 +11,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,.2);
 
   @include from-screen-size(md) {
-    height: 90px;
+    height: 80px;
   }
 
   &.transparent {
@@ -35,7 +35,7 @@
     transform: translateY(1px);
 
     @include from-screen-size(md) {
-      transform: translateY(20px);
+      transform: translateY(15px);
     }
   }
 }
@@ -81,14 +81,16 @@
   height: 0;
   transition: .35s;
   position: absolute;
-  top: 60px;
+  top: 48px;
   left: 0;
   right: 0;
   background: $white;
   text-align: center;
+  border-bottom: 1px solid transparent;
 
   &.active {
     height: 262px;
+    border-color: #eceeef;
   }
 
   @include from-screen-size(md) {
@@ -96,6 +98,7 @@
     position: static;
     background: transparent;
     overflow: visible;
+    border-bottom: none;
   }
 
   > li {
@@ -228,7 +231,7 @@
       color: hsla(0,0%,100%,.7);
       padding: 0 12px;
       font-size: 13px;
-      line-height: 40px;
+      line-height: 30px;
       transition: all .2s ease-in;
 
       &:hover, &.active {

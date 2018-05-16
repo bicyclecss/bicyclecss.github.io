@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   overflow: hidden;
-  padding: 170px 0 100px;
+  padding: 90px 0 100px;
 
   @include from-screen-size(md) {
     padding-top: 130px;

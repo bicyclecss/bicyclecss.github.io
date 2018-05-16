@@ -1,7 +1,6 @@
 import * as React from 'react'
 import {NavLink} from 'react-router-dom'
 
-import * as H from 'history'
 const classNames = require('classnames/bind')
 
 import Button from 'common/components/Button'
@@ -13,12 +12,13 @@ interface Props {
     style?: string
     isShowInnerMenu?: boolean
     innerMenu?: innerMenuItem[]
-    location?: H.Location
+    activeLink?: string
 }
 
 interface innerMenuItem {
     link: string
     title: string
+    active: boolean
 }
 
 interface State {
@@ -32,7 +32,7 @@ export default class Navigation extends React.Component<Props, State> {
     }
 
     render() {
-        const {style, isShowInnerMenu, innerMenu, location} = this.props
+        const {style, isShowInnerMenu, innerMenu, activeLink} = this.props
         const {isShowMenu} = this.state
 
         return (
@@ -67,17 +67,23 @@ export default class Navigation extends React.Component<Props, State> {
                     <div className={cx('inner-menu')}>
                         <div className="container">
                             <ul className={cx('inner-nav-menu')}>
-                                {innerMenu.map((item: innerMenuItem, index: number) => (
-                                    <li key={index}>
-                                        <NavLink
-                                            exact
-                                            to={item.link}
-                                            className={cx({'active': location.pathname + location.hash == item.link})}
-                                        >
-                                            {item.title}
-                                        </NavLink>
-                                    </li>
-                                ))}
+                                {innerMenu.map((item: innerMenuItem, index: number) => {
+                                    if (item.link == '/getting-started#whatsIncluded') {
+                                        // console.log(activeLink == item.link)
+                                    }
+
+                                    return (
+                                        <li key={index}>
+                                            <NavLink
+                                                exact
+                                                to={item.link}
+                                                className={cx({'active': activeLink == item.link})}
+                                            >
+                                                {item.title}
+                                            </NavLink>
+                                        </li>
+                                    )
+                                })}
                             </ul>
                         </div>
                     </div>
