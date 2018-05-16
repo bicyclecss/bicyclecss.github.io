@@ -188,12 +188,18 @@ export default class Helper extends React.Component<{}, {}> {
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur enim
                         perferendis quo repudiandae sapiente voluptatibus. <br/>
-                        <strong>Available values:</strong> inline, inline-block, block, table, table-cell, flex, inline-flex
+                        <strong>Available values:</strong>
+                        <code className="code">.display-inline</code>, <code className="code">.display-inline-block</code>,
+                        <code className="code">.display-block</code>, <code className="code">.display-table</code>,
+                        <code className="code">.display-table-cell</code>, <code className="code">.display-flex</code>,
+                        <code className="code">.display-inline-flex</code>.
                     </p>
                     <div className="row mb-30">
                         <div className="column xs-12 lg-8">
                             <Code copyCode={
-                                ''
+                                '<div class="display-inline-block">.display-inline-block</div>\n' +
+                                '<div class="display-inline-block">.display-inline-block</div>\n' +
+                                '<div class="display-md-flex">.display-md-flex</div>'
                             }>
                                 <Tag className="display-inline-block">.display-inline-block</Tag>
                                 <Tag className="display-inline-block">.display-inline-block</Tag>
@@ -204,6 +210,47 @@ export default class Helper extends React.Component<{}, {}> {
                             <div className="p-10 display-inline-block bg-light-gray border border-medium-gray">.display-inline-block</div>
                             <div className="p-10 display-inline-block bg-light-gray border border-medium-gray">.display-inline-block</div>
                             <div className="mt-10 p-10 display-md-flex bg-light-gray border border-medium-gray">.display-md-flex</div>
+                        </div>
+                    </div>
+                    <h3>Position</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, magnam. <br/>
+                        <strong>Available values:</strong>
+                        <code className="code">.position-static</code>, <code className="code">.position-relative</code>,
+                        <code className="code">.position-absolute</code>, <code className="code">.position-fixed</code>.
+                    </p>
+                    <Code copyCode={
+                        '<div class="position-static">.position-static</div>\n' +
+                        '<div class="position-relative">.position-relative</div>\n' +
+                        '<div class="position-absolute">.position-absolute</div>\n' +
+                        '<div class="position-fixed">.position-fixed</div>'
+                    }>
+                        <Tag className="position-static">.position-static</Tag>
+                        <Tag className="position-relative">.position-relative</Tag>
+                        <Tag className="position-absolute">.position-absolute</Tag>
+                        <Tag className="position-fixed">.position-fixed</Tag>
+                    </Code>
+                    <h3>Border</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, magnam. <br/>
+                        <strong>Borders:</strong>
+                        <code className="code">.border</code>, <code className="code">.border-top</code>,
+                        <code className="code">.border-left</code>, <code className="code">.border-right</code>,
+                        <code className="code">.border-bottom</code>.
+                    </p>
+                    <div className="row mb-30">
+                        <div className="column xs-12 lg-8">
+                            <Code copyCode={
+                                '<div class="border border-secondary">.border.border-secondary</div>\n' +
+                                '<div class="border-top border-primary">.border-top.border-primary</div>'
+                            }>
+                                <Tag className="border border-secondary">.border.border-secondary</Tag>
+                                <Tag className="border-top border-primary">.border-top.border-primary</Tag>
+                            </Code>
+                        </div>
+                        <div className="column xs-12 lg-4">
+                            <p className="border border-secondary">.border.border-secondary</p>
+                            <p className="border-top border-primary">.border-top.border-primary</p>
                         </div>
                     </div>
                 </div>
