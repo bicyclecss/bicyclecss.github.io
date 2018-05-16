@@ -18,7 +18,7 @@ export default class Css extends React.Component<{}, {}> {
                 </Banner>
                 <Typography />
                 <Grid />
-                {/*<Helper />*/}
+                <Helper />
             </div>
         )
     }
