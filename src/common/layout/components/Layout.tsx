@@ -21,6 +21,9 @@ const innerMenu = {
     '/getting-started': [
         {link: '/getting-started#whatsIncluded', title: 'What\'s Included'},
         {link: '/getting-started#quickStart', title: 'Quick Start'}
+    ],
+    '/css': [
+        {link: '/css#typography', title: 'Typography'}
     ]
 }
 

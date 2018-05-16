@@ -21,16 +21,22 @@ export default class Tag extends React.Component<Props, {}> {
 
         return (
             <div>
-                <span className="text-primary">{'<'}{name}</span>
-                {!!className && <span className="text-secondary">{' class='}</span>}
-                {!!className && <span className="text-red">"{className}"</span>}
-                <span className="text-primary">{'>'}</span>
+                <span className="text-red">{'<'}{name}</span>
+                {!!className && <span className="text-blue">{' class'}</span>}
+                {!!className &&
+                    <span>
+                        <span className="text-default">="</span>
+                        <span className="text-purple">{className}</span>
+                        <span className="text-default">"</span>
+                    </span>
+                }
+                <span className="text-red">{'>'}</span>
                 {!!this.props.children && (
                     typeof this.props.children == 'string'
                         ? this.props.children
                         : <blockquote>{this.props.children}</blockquote>
                 )}
-                <span className="text-primary">{'</'}{name}{'>'}</span>
+                <span className="text-red">{'</'}{name}{'>'}</span>
             </div>
         )
     }
