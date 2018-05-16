@@ -1,0 +1,30 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+  padding: 170px 0 100px;
+
+  @include from-screen-size(md) {
+    padding-top: 130px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: url("../img/wave.png") no-repeat bottom left;
+    background-size: 200% 100% !important;
+    height: 100%;
+    left: -1px;
+    right: -1px;
+    bottom: -100px;
+    z-index: 1;
+
+    @include from-screen-size(md) {
+      background-size: 100% 100% !important;
+    }
+  }
+
+  :global(.container) {
+    position: relative;
+    z-index: 2;
+  }
+}

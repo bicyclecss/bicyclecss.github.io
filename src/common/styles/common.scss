@@ -1,0 +1,14 @@
+body {
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+  font-family: $font-raleway;
+  font-weight: 300;
+}
+
+:global {
+  .section {
+    padding: 60px 0;
+  }
+}

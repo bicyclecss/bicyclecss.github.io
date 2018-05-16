@@ -1,0 +1,241 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 0;
+  height: 50px;
+  transition: .2s linear;
+  background-color: $white;
+  box-shadow: 0 0 15px rgba(0,0,0,.2);
+
+  @include from-screen-size(md) {
+    height: 90px;
+  }
+
+  &.transparent {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &.small {
+
+    @include from-screen-size(md) {
+      height: 50px;
+
+      :global(.container) {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  :global(.container) {
+    transition: .2s linear;
+    transform: translateY(1px);
+
+    @include from-screen-size(md) {
+      transform: translateY(20px);
+    }
+  }
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  text-decoration: none;
+  transition: .2s linear;
+  color: $body-text-color;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .transparent & {
+    color: $white;
+  }
+}
+
+.logo-img {
+  size: 45px;
+  margin-top: -3px;
+  margin-right: 10px;
+  background: url("common/img/bicycle.svg") no-repeat center;
+  background-size: contain;
+
+  .transparent & {
+    background: url("../img/bicycle.svg") no-repeat center;
+    background-size: contain;
+  }
+}
+
+.nav-menu {
+  overflow: hidden;
+  height: 0;
+  transition: .35s;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: $white;
+  text-align: center;
+
+  &.active {
+    height: 262px;
+  }
+
+  @include from-screen-size(md) {
+    height: auto;
+    position: static;
+    background: transparent;
+    overflow: visible;
+  }
+
+  > li {
+    display: block;
+
+    @include from-screen-size(md) {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    > a {
+      position: relative;
+      display: block;
+      padding: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      color: $body-text-color;
+      line-height: 20px;
+      font-size: 14px;
+      transition: .2s;
+
+      &:after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        left: 50%;
+        background: transparent;
+        transition: all .2s;
+        transform: translateX(-50%);
+      }
+
+      &.active, &:hover {
+        color: $primary;
+
+        &:after {
+          width: 40%;
+          background: $primary;
+
+          .transparent & {
+            background: $white;
+          }
+        }
+      }
+
+      .transparent & {
+        @include from-screen-size(md) {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.nav-button {
+  margin: 15px 0;
+
+  @include from-screen-size(md) {
+    margin: 8px 0 0 15px;
+  }
+}
+
+.menu-button {
+  position: relative;
+  display: block;
+  size: 26px 3px;
+  border-radius: 10px;
+  background: $body-text-color;
+  transition: .2s;
+  border: none;
+  outline: none;
+
+  .transparent & {
+    background: $white;
+  }
+
+  @include from-screen-size(md) {
+    display: none;
+  }
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: $body-text-color;
+    transition: .2s;
+
+    .transparent & {
+      background: $white;
+    }
+  }
+
+  &:before {
+    top: -8px;
+  }
+
+  &:after {
+    bottom: -8px;
+  }
+}
+
+.inner-menu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 45;
+  background-color: $primary;
+  display: none;
+
+  @include from-screen-size(md) {
+    display: block;
+  }
+}
+
+.inner-nav-menu {
+  text-align: center;
+
+  > li {
+    display: inline-block;
+    vertical-align: top;
+
+    > a {
+      display: block;
+      color: hsla(0,0%,100%,.7);
+      padding: 0 12px;
+      font-size: 13px;
+      line-height: 40px;
+      transition: all .2s ease-in;
+
+      &:hover, &.active {
+        color: $white;
+        text-decoration: none;
+        background-color: hsla(0,0%,100%,.18);
+      }
+    }
+  }
+}

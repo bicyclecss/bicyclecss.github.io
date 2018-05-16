@@ -1,0 +1,63 @@
+.file-tree {
+  list-style: none;
+  padding-left: 25px;
+  margin-top: 50px;
+
+  li {
+    padding: 4px 0;
+    line-height: 24px;
+
+    > span {
+      font-size: 15px;
+      cursor: pointer;
+      display: inline-block;
+      min-width: 120px;
+
+      &:before {
+        content: '';
+        margin-right: 8px;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    &.is-folder span:before {
+      size: 18px;
+      margin-top: 1px;
+      background: url("../img/open-folder.svg") no-repeat center;
+      background-size: contain;
+    }
+
+    &.is-file span:before {
+      size: 15px;
+      margin-top: 2px;
+      background: url("../img/file.svg") no-repeat center;
+      background-size: contain;
+    }
+
+    ul {
+      display: none;
+      padding-left: 25px;
+    }
+
+    &.open > ul {
+      display: block;
+    }
+  }
+
+  i {
+    margin-left: 24px;
+    display: block;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #b4b7b8;
+    cursor: default;
+    transition: color .4s ease;
+
+    li:hover & {
+      color: #697376;
+    }
+  }
+}
