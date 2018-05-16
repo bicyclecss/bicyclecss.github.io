@@ -67,23 +67,17 @@ export default class Navigation extends React.Component<Props, State> {
                     <div className={cx('inner-menu')}>
                         <div className="container">
                             <ul className={cx('inner-nav-menu')}>
-                                {innerMenu.map((item: innerMenuItem, index: number) => {
-                                    if (item.link == '/getting-started#whatsIncluded') {
-                                        // console.log(activeLink == item.link)
-                                    }
-
-                                    return (
-                                        <li key={index}>
-                                            <NavLink
-                                                exact
-                                                to={item.link}
-                                                className={cx({'active': activeLink == item.link})}
-                                            >
-                                                {item.title}
-                                            </NavLink>
-                                        </li>
-                                    )
-                                })}
+                                {innerMenu.map((item: innerMenuItem, index: number) => (
+                                    <li key={index}>
+                                        <NavLink
+                                            exact
+                                            to={item.link}
+                                            className={cx({'active': activeLink == item.link})}
+                                        >
+                                            {item.title}
+                                        </NavLink>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>

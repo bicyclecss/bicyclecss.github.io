@@ -58,8 +58,9 @@ export default class QuickStart extends React.Component<{}, {}> {
                         <div>
                             <div className="ml-30">
                                 <span className="text-red">loader</span>
-                                <span className="text-default">: </span>
-                                <span className="text-purple">'css-loader'</span>
+                                <span className="text-default">: '</span>
+                                <span className="text-purple">style-loader</span>
+                                <span className="text-default">'</span>
                                 <span className="text-red">,</span>
                             </div>
                         </div>
@@ -71,10 +72,28 @@ export default class QuickStart extends React.Component<{}, {}> {
                         <div>
                             <div className="ml-30">
                                 <span className="text-red">loader</span>
-                                <span className="text-default">: </span>
-                                <span className="text-purple">'autoprefixer-loader'</span>
+                                <span className="text-default">: '</span>
+                                <span className="text-purple">css-loader</span>
+                                <span className="text-default">'</span>
                                 <span className="text-red">,</span>
                             </div>
+                        </div>
+                        <div>
+                            <div className="ml-30">
+                                <span className="text-red">options</span>
+                                <span className="text-default">: </span>
+                                <span className="text-default">{'{'}</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="ml-60">
+                                <span className="text-red">minimize</span>
+                                <span className="text-default">: </span>
+                                <span className="text-purple">true</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span className="ml-30 text-default">{'}'}</span>
                         </div>
                         <div>
                             <span className="text-default">{'}'}</span>
@@ -84,8 +103,9 @@ export default class QuickStart extends React.Component<{}, {}> {
                         <div>
                             <div className="ml-30">
                                 <span className="text-red">loader</span>
-                                <span className="text-default">: </span>
-                                <span className="text-purple">'sass-loader'</span>
+                                <span className="text-default">: '</span>
+                                <span className="text-purple">sass-loader</span>
+                                <span className="text-default">'</span>
                                 <span className="text-red">,</span>
                             </div>
                         </div>
@@ -107,8 +127,9 @@ export default class QuickStart extends React.Component<{}, {}> {
                         <div>
                             <div className="ml-60">
                                 <span className="text-red">data</span>
-                                <span className="text-default">: </span>
-                                <span className="text-purple">'@import "bicycle/scss/common/variables"; @import "bicycle/scss/common/mixins";'</span>
+                                <span className="text-default">: '</span>
+                                <span className="text-purple">@import "bicycle/scss/common/variables"; @import "bicycle/scss/common/mixins";</span>
+                                <span className="text-default">'</span>
                                 <span className="text-red">,</span>
                             </div>
                         </div>
@@ -125,7 +146,9 @@ export default class QuickStart extends React.Component<{}, {}> {
                                 <span className="text-blue">resolve</span>
                                 <span className="text-default">(__dirname</span>
                                 <span className="text-red">, </span>
-                                <span className="text-purple">'./src'</span>
+                                <span className="text-default">'</span>
+                                <span className="text-purple">./src</span>
+                                <span className="text-default">'</span>
                                 <span className="text-default">)</span>
                             </div>
                         </div>
