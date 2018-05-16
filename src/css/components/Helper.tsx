@@ -147,7 +147,7 @@ export default class Helper extends React.Component<{}, {}> {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum
                         laboriosam molestias reiciendis.
                     </p>
-                    <div className="row mb-30">
+                    <div className="row">
                         <div className="column xs-12 lg-8">
                             <Code copyCode={
                                 '<p class="bg-primary">A paragraph with .bg-primary class</p>\n' +
@@ -162,7 +162,7 @@ export default class Helper extends React.Component<{}, {}> {
                             <p className="bg-secondary">A paragraph with .bg-secondary class</p>
                         </div>
                     </div>
-                    <div className="row justify-content-center">
+                    <div className="row mb-30 justify-content-center">
                         <div className={cx('circle', 'bg-white', 'border')}>.bg-white</div>
                         <div className={cx('circle', 'bg-black', 'text-white')}>.bg-black</div>
                         <div className={cx('circle', 'bg-yellow')}>.bg-yellow</div>
@@ -183,6 +183,28 @@ export default class Helper extends React.Component<{}, {}> {
                         <div className={cx('circle', 'bg-success')}>.bg-success</div>
                         <div className={cx('circle', 'bg-error')}>.bg-error</div>
                         <div className={cx('circle', 'bg-warning')}>.bg-warning</div>
+                    </div>
+                    <h3>Display</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur enim
+                        perferendis quo repudiandae sapiente voluptatibus. <br/>
+                        <strong>Available values:</strong> inline, inline-block, block, table, table-cell, flex, inline-flex
+                    </p>
+                    <div className="row mb-30">
+                        <div className="column xs-12 lg-8">
+                            <Code copyCode={
+                                ''
+                            }>
+                                <Tag className="display-inline-block">.display-inline-block</Tag>
+                                <Tag className="display-inline-block">.display-inline-block</Tag>
+                                <Tag className="display-md-flex">.display-md-flex</Tag>
+                            </Code>
+                        </div>
+                        <div className="column xs-12 lg-4">
+                            <div className="p-10 display-inline-block bg-light-gray border border-medium-gray">.display-inline-block</div>
+                            <div className="p-10 display-inline-block bg-light-gray border border-medium-gray">.display-inline-block</div>
+                            <div className="mt-10 p-10 display-md-flex bg-light-gray border border-medium-gray">.display-md-flex</div>
+                        </div>
                     </div>
                 </div>
             </section>
