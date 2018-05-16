@@ -11,4 +11,10 @@ h1, h2 {
   .section {
     padding: 60px 0 0 0;
   }
+
+  .code {
+    padding: 0 5px;
+    color: $red;
+    background-color: $light-gray;
+  }
 }

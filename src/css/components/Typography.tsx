@@ -204,6 +204,28 @@ export default class Typography extends React.Component<{}, {}> {
                             <p className="text-transform-none mb-5">A paragraph with .text-transform-none class</p>
                         </div>
                     </div>
+                    <h3>Text wrapping</h3>
+                    <p>Prevent text from wrapping with a <code className="code">.text-nowrap</code> class.</p>
+                    <div className="row mb-30">
+                        <div className="column xs-12 lg-8">
+                            <Code copyCode={
+                                '<div class="text-nowrap">Lorem ipsum dolor sit amet</div>'
+                            }>
+                                <Tag className="text-nowrap">
+                                    Lorem ipsum dolor sit amet
+                                </Tag>
+                            </Code>
+                        </div>
+                        <div className="column xs-12 lg-4">
+                            <div className="row">
+                                <div className="column xs-6">
+                                    <div className="p-10 text-nowrap border border-medium-gray bg-light-gray">
+                                        Lorem ipsum dolor sit amet
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         )
