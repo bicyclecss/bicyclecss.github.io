@@ -14,7 +14,7 @@ class Content extends React.Component<{}, {}> {
 
     render() {
         return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router>
                 <div>
                     <Switch>
                         <Route exact path="/" component={Main} />
