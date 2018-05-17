@@ -9,11 +9,13 @@
         var segmentCount = 0;
         var l = window.location;
 
-        l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-            l.pathname.split('/').slice(0, 1 + segmentCount).join('/') +
-            l.hash
-        )
+        l.replace('https://bicyclecss.github.io/css')
+
+        // l.replace(
+        //     l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        //     l.pathname.split('/').slice(0, 1 + segmentCount).join('/') +
+        //     l.hash
+        // )
 
         // const nonHomeUrls = ['/getting-started', '/css'];
         //
