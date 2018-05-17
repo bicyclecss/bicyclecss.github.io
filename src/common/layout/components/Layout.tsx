@@ -25,7 +25,8 @@ const innerMenu = {
     '/css': [
         {link: '/css#typography', title: 'Typography'},
         {link: '/css#grid', title: 'Grid'},
-        {link: '/css#helper', title: 'Helper Classes'}
+        {link: '/css#helper', title: 'Helper Classes'},
+        {link: '/css#responsive', title: 'Responsive'}
     ]
 }
 

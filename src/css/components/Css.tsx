@@ -5,6 +5,7 @@ import Banner from 'common/layout/components/Banner'
 import Typography from './Typography'
 import Grid from './Grid'
 import Helper from './Helper'
+import Responsive from './Responsive'
 
 
 export default class Css extends React.Component<{}, {}> {
@@ -19,6 +20,7 @@ export default class Css extends React.Component<{}, {}> {
                 <Typography />
                 <Grid />
                 <Helper />
+                <Responsive />
             </div>
         )
     }
