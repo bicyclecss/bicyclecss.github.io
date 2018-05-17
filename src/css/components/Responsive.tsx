@@ -1,13 +1,9 @@
 import * as React from 'react'
 
-// const classNames = require('classnames/bind')
-
 import Code from 'common/components/Code'
-import Tag from 'common/components/Tag'
 
-// const cx = classNames.bind(require('../styles/helper.scss'))
 
-const screenSizes = ['xs', 'sm', 'md', 'lg'];
+const screenSizes = ['xs', 'sm', 'md', 'lg']
 
 export default class Responsive extends React.Component<{}, {}> {
 
@@ -261,6 +257,71 @@ export default class Responsive extends React.Component<{}, {}> {
                             </div>
                         ))}
                     </div>
+                    <h4>Flex</h4>
+                    <div className="row mb-30">
+                        {screenSizes.map((screen: string, index: number) => (
+                            <div key={index} className="column xs-12 md-3">
+                                <ul>
+                                    <li>
+                                        <code className="code">
+                                            .flex-direction-{screen}-
+                                            <span className="text-default">#{'{'}</span>
+                                            <span className="text-purple">dir</span>
+                                            <span className="text-default">{'}'}</span>
+                                        </code>
+                                    </li>
+                                    <li>
+                                        <code className="code">
+                                            .justify-content-{screen}-
+                                            <span className="text-default">#{'{'}</span>
+                                            <span className="text-purple">align</span>
+                                            <span className="text-default">{'}'}</span>
+                                        </code>
+                                    </li>
+                                    <li>
+                                        <code className="code">
+                                            .align-content-{screen}-
+                                            <span className="text-default">#{'{'}</span>
+                                            <span className="text-purple">align</span>
+                                            <span className="text-default">{'}'}</span>
+                                        </code>
+                                    </li>
+                                    <li>
+                                        <code className="code">
+                                            .align-items-{screen}-
+                                            <span className="text-default">#{'{'}</span>
+                                            <span className="text-purple">align</span>
+                                            <span className="text-default">{'}'}</span>
+                                        </code>
+                                    </li>
+                                    <li>
+                                        <code className="code">
+                                            .align-self-{screen}-
+                                            <span className="text-default">#{'{'}</span>
+                                            <span className="text-purple">align</span>
+                                            <span className="text-default">{'}'}</span>
+                                        </code>
+                                    </li>
+                                    <li>
+                                        <code className="code">
+                                            .flex-order-{screen}-
+                                            <span className="text-default">#{'{'}</span>
+                                            <span className="text-purple">number</span>
+                                            <span className="text-default">{'}'}</span>
+                                        </code>
+                                    </li>
+                                    <li>
+                                        <code className="code">
+                                            .flex-grow-{screen}-
+                                            <span className="text-default">#{'{'}</span>
+                                            <span className="text-purple">number</span>
+                                            <span className="text-default">{'}'}</span>
+                                        </code>
+                                    </li>
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
                     <h3>Headings</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, repellat.
@@ -285,7 +346,6 @@ export default class Responsive extends React.Component<{}, {}> {
                         '    )\n' +
                         ');'
                     }>
-
                         <span className="text-red">$header-font-sizes</span>
                         <span className="text-default">: (</span>
                         <blockquote>

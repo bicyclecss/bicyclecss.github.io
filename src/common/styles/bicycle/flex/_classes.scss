@@ -19,6 +19,13 @@
       }
     }
 
+    /* Flex Wrap */
+    @each $wrap in map-keys($flex-wrap) {
+      .flex#{$infix}-#{$wrap} {
+        flex-wrap: map-get($flex-wrap, $wrap) !important;
+      }
+    }
+
     /* Justify Content */
     @each $justify in map-keys($flex-justify) {
       .justify-content#{$infix}-#{$justify} {
