@@ -1,5 +1,8 @@
-plugins:
+gems:
   - jekyll-redirect-from
 
-redirect_to:
-  - https://bicyclecss.github.io
+redirect_from:
+  - "/css/"
+
+#redirect_to:
+#  - https://bicyclecss.github.io
