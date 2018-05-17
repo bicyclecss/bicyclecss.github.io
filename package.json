@@ -2,6 +2,7 @@
   "name": "bicycle",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://bicyclecss.github.io",
   "scripts": {
     "build:dev": "webpack --env.NODE_ENV=develop",
     "build:prod": "webpack --env.NODE_ENV=production",
