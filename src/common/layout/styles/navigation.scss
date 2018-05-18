@@ -86,14 +86,17 @@
   right: 0;
   background: $white;
   text-align: center;
+  opacity: 0;
   border-bottom: 1px solid transparent;
 
   &.active {
     height: 262px;
+    opacity: 1;
     border-color: #eceeef;
   }
 
   @include from-screen-size(md) {
+    opacity: 1;
     height: auto;
     position: static;
     background: transparent;

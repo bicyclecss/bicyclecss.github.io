@@ -1,4 +1,5 @@
 import * as React from 'react'
+import {RouterProps} from 'react-router'
 
 const classNames = require('classnames/bind')
 
@@ -13,7 +14,7 @@ interface State {
     navStyle: string
 }
 
-export default class Main extends React.Component<{}, State> {
+export default class Main extends React.Component<RouterProps, State> {
 
     state = {
         navStyle: 'transparent'
@@ -31,7 +32,7 @@ export default class Main extends React.Component<{}, State> {
     render() {
         return (
             <main>
-                <Header navStyle={this.state.navStyle} />
+                <Header navStyle={this.state.navStyle} history={this.props.history} />
                 <section className="section">
                     <div className="container">
                         <h2 className="text-center text-primary">Lorem ipsum dolor</h2>

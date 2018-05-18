@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 const classNames = require('classnames/bind')
+import * as H from 'history'
 
 import Button from 'common/components/Button'
 import Navigation from 'common/layout/components/Navigation'
@@ -10,12 +11,13 @@ const cx = classNames.bind(require('../styles/header.scss'))
 
 interface Props {
     navStyle: string
+    history: H.History
 }
 
 export default class Header extends React.Component<Props, {}> {
 
     render() {
-        const {navStyle} = this.props
+        const {navStyle, history} = this.props
 
         return (
             <header className={cx('header')}>
@@ -32,7 +34,7 @@ export default class Header extends React.Component<Props, {}> {
                                 Doloribus enim impedit officia.
                             </p>
                             <Button color="pink-orange" className="mr-15 mb-15">Download</Button>
-                            <Button color="pink-purple">Getting started</Button>
+                            <Button color="pink-purple" onClick={() => history.push('/getting-started')}>Getting started</Button>
                         </div>
                         <div className="column xs-12 md-6">
                             <img className={cx('img')} src={require('common/img/bicycle.svg')} alt=""/>
