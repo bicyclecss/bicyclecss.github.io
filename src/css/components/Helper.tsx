@@ -23,7 +23,12 @@ export default class Helper extends React.Component<{}, {}> {
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, eaque enim esse
                         exercitationem obcaecati placeat rem veniam vero. Adipisci exercitationem laudantium
-                        mollitia reprehenderit sunt temporibus? <br />
+                        mollitia reprehenderit sunt temporibus <code className="code">.m-</code>,
+                        <code className="code">.mt-</code>, <code className="code">.mr-</code>,
+                        <code className="code">.mb-</code>, <code className="code">.ml-</code>,
+                        <code className="code">.p-</code>,<code className="code">.pt-</code>,
+                        <code className="code">.pr-</code>,<code className="code">.pb-</code>,
+                        <code className="code">.pl-</code> <br />
                         <strong>Available values:</strong> 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150;
                     </p>
                     <div className="row">
@@ -145,21 +150,24 @@ export default class Helper extends React.Component<{}, {}> {
                     <h3>Background color</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum
-                        laboriosam molestias reiciendis.
+                        laboriosam molestias reiciendis <code className="code">.bg-</code>
                     </p>
-                    <div className="row">
+                    <div className="row mb-30">
                         <div className="column xs-12 lg-8">
                             <Code copyCode={
                                 '<p class="bg-primary">A paragraph with .bg-primary class</p>\n' +
-                                '<p class="bg-secondary">A paragraph with .bg-secondary class</p>'
+                                '<p class="bg-secondary">A paragraph with .bg-secondary class</p>' +
+                                '<p class="bg-default">A paragraph with .bg-default class</p>'
                             }>
                                 <Tag name="p" className="bg-primary">A paragraph with .bg-primary class</Tag>
                                 <Tag name="p" className="bg-secondary">A paragraph with .bg-secondary class</Tag>
+                                <Tag name="p" className="bg-default">A paragraph with .bg-default class</Tag>
                             </Code>
                         </div>
                         <div className="column xs-12 lg-4">
-                            <p className="bg-primary">A paragraph with .bg-primary class</p>
-                            <p className="bg-secondary">A paragraph with .bg-secondary class</p>
+                            <p className="bg-primary mb-0 p-5 text-white">A paragraph with .bg-primary class</p>
+                            <p className="bg-secondary mb-0 p-5 text-white">A paragraph with .bg-secondary class</p>
+                            <p className="bg-default mb-0 p-5 text-white">A paragraph with .bg-default class</p>
                         </div>
                     </div>
                     <div className="row mb-30 justify-content-center">
@@ -238,19 +246,104 @@ export default class Helper extends React.Component<{}, {}> {
                         <code className="code">.border-left</code>, <code className="code">.border-right</code>,
                         <code className="code">.border-bottom</code>.
                     </p>
-                    <div className="row mb-30">
-                        <div className="column xs-12 lg-8">
-                            <Code copyCode={
-                                '<div class="border border-secondary">.border.border-secondary</div>\n' +
-                                '<div class="border-top border-primary">.border-top.border-primary</div>'
-                            }>
-                                <Tag className="border border-secondary">.border.border-secondary</Tag>
-                                <Tag className="border-top border-primary">.border-top.border-primary</Tag>
-                            </Code>
+                    <Code copyCode={
+                        '<div class="row text-center">\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border bg-light-gray p-20">.border</div>\n' +
+                        '    </div>\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border-top bg-light-gray p-20">.border-top</div>\n' +
+                        '    </div>\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border-right bg-light-gray p-20">.border-right</div>\n' +
+                        '    </div>\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border-bottom bg-light-gray p-20">.border-bottom</div>\n' +
+                        '    </div>\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border-left bg-light-gray p-20">.border-left</div>\n' +
+                        '    </div>\n' +
+                        '</div>'
+                    }>
+                        <Tag className="row text-center">
+                            <Tag className="column">
+                                <Tag className="border bg-light-gray p-20">.border</Tag>
+                            </Tag>
+                            <Tag className="column">
+                                <Tag className="border-top bg-light-gray p-20">.border-top</Tag>
+                            </Tag>
+                            <Tag className="column">
+                                <Tag className="border-right bg-light-gray p-20">.border-right</Tag>
+                            </Tag>
+                            <Tag className="column">
+                                <Tag className="border-bottom bg-light-gray p-20">.border-bottom</Tag>
+                            </Tag>
+                            <Tag className="column">
+                                <Tag className="border-left bg-light-gray p-20">.border-left</Tag>
+                            </Tag>
+                        </Tag>
+                    </Code>
+                    <div className="row text-center mb-30">
+                        <div className="column">
+                            <div className="border bg-light-gray p-20">.border</div>
                         </div>
-                        <div className="column xs-12 lg-4">
-                            <p className="border border-secondary">.border.border-secondary</p>
-                            <p className="border-top border-primary">.border-top.border-primary</p>
+                        <div className="column">
+                            <div className="border-top bg-light-gray p-20">.border-top</div>
+                        </div>
+                        <div className="column">
+                            <div className="border-right bg-light-gray p-20">.border-right</div>
+                        </div>
+                        <div className="column">
+                            <div className="border-bottom bg-light-gray p-20">.border-bottom</div>
+                        </div>
+                        <div className="column">
+                            <div className="border-left bg-light-gray p-20">.border-left</div>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, recusandae
+                        <code className="code">
+                            .border-<span className="text-default">{'#{'}</span>
+                            <span className="text-purple">$color</span>
+                            <span className="text-default">{'}'}</span>
+                        </code>
+                    </p>
+                    <Code copyCode={
+                        ''
+                    }>
+                        <Tag className="row text-center">
+                            <Tag className="column">
+                                <Tag className="border border-success bg-light-gray p-20">.border.border-success</Tag>
+                            </Tag>
+                            <div className="column">
+                                <Tag className="border border-warning bg-light-gray p-20">.border.border-warning</Tag>
+                            </div>
+                            <Tag className="column">
+                                <Tag className="border border-error bg-light-gray p-20">.border.border-error</Tag>
+                            </Tag>
+                            <Tag className="column">
+                                <Tag className="border border-secondary bg-light-gray p-20">.border.border-secondary</Tag>
+                            </Tag>
+                            <Tag className="column">
+                                <Tag className="border border-pink bg-light-gray p-20">.border.border-pink</Tag>
+                            </Tag>
+                        </Tag>
+                    </Code>
+                    <div className="row mb-30 text-center">
+                        <div className="column">
+                            <div className="border border-success bg-light-gray p-20">.border.border-success</div>
+                        </div>
+                        <div className="column">
+                            <div className="border border-warning bg-light-gray p-20">.border.border-warning</div>
+                        </div>
+                        <div className="column">
+                            <div className="border border-error bg-light-gray p-20">.border.border-error</div>
+                        </div>
+                        <div className="column">
+                            <div className="border border-secondary bg-light-gray p-20">.border.border-secondary</div>
+                        </div>
+                        <div className="column">
+                            <div className="border border-pink bg-light-gray p-20">.border.border-pink</div>
                         </div>
                     </div>
                 </div>

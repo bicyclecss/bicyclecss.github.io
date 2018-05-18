@@ -222,7 +222,7 @@ export default class Flex extends React.Component<{}, {}> {
                         </div>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, voluptatem.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, voluptatem <a href="">link</a>.
                     </p>
                     <Code copyCode={
                         '<div class="flex flex-direction-column flex-direction-md-row">\n' +
