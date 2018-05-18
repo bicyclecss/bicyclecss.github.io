@@ -143,6 +143,9 @@ export default class Responsive extends React.Component<{}, {}> {
                     </div>
                     <h3>Classes</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quas?</p>
+                    <p>
+                        <span className="text-purple">$number</span>: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150;
+                    </p>
                     <h4>Margin</h4>
                     <div className="row mb-30">
                         {screenSizes.map((screen: string, index: number) => (
@@ -152,7 +155,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .m-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -160,7 +163,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .mt-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -168,7 +171,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .mr-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -176,7 +179,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .mb-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -184,7 +187,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .ml-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -201,7 +204,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .p-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -209,7 +212,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .pt-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -217,7 +220,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .pr-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -225,7 +228,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .pb-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -258,6 +261,11 @@ export default class Responsive extends React.Component<{}, {}> {
                         ))}
                     </div>
                     <h4>Flex</h4>
+                    <p>
+                        <span className="text-purple">$dir</span>: row, column, row-reverse, column-reverse. <br/>
+                        <span className="text-purple">$align</span>: start, end, center, between, around. <br/>
+                        <span className="text-purple">$number</span>: 0, 1, 2, ... , 9, 10.
+                    </p>
                     <div className="row mb-30">
                         {screenSizes.map((screen: string, index: number) => (
                             <div key={index} className="column xs-12 md-3">
@@ -266,7 +274,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .flex-direction-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">dir</span>
+                                            <span className="text-purple">$dir</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -274,7 +282,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .justify-content-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">align</span>
+                                            <span className="text-purple">$align</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -282,7 +290,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .align-content-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">align</span>
+                                            <span className="text-purple">$align</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -290,7 +298,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .align-items-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">align</span>
+                                            <span className="text-purple">$align</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -306,7 +314,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .flex-order-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>
@@ -314,7 +322,7 @@ export default class Responsive extends React.Component<{}, {}> {
                                         <code className="code">
                                             .flex-grow-{screen}-
                                             <span className="text-default">#{'{'}</span>
-                                            <span className="text-purple">number</span>
+                                            <span className="text-purple">$number</span>
                                             <span className="text-default">{'}'}</span>
                                         </code>
                                     </li>

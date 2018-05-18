@@ -12,14 +12,14 @@
   }
 }
 
-@mixin max-height($height) {
-  @media screen and (max-height: $height - 1 + px) {
+@mixin min-height($height) {
+  @media screen and (min-height: $height + px) {
     @content;
   }
 }
 
-@mixin media-width($min-width, $max-width) {
-  @media screen and (min-width: $min-width + px) and (max-width: $max-width - 1 + px) {
+@mixin max-height($height) {
+  @media screen and (max-height: $height - 1 + px) {
     @content;
   }
 }

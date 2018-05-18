@@ -27,7 +27,8 @@ const innerMenu = {
         {link: '/css#grid', title: 'Grid'},
         {link: '/css#flexbox', title: 'Flexbox'},
         {link: '/css#helper', title: 'Helper Classes'},
-        {link: '/css#responsive', title: 'Responsive'}
+        {link: '/css#responsive', title: 'Responsive'},
+        {link: '/css#mixins', title: 'Mixins'}
     ]
 }
 

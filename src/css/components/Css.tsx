@@ -7,6 +7,7 @@ import Grid from './Grid'
 import Flex from './Flex'
 import Helper from './Helper'
 import Responsive from './Responsive'
+import Mixins from './Mixins'
 
 
 export default class Css extends React.Component<{}, {}> {
@@ -23,6 +24,7 @@ export default class Css extends React.Component<{}, {}> {
                 <Flex />
                 <Helper />
                 <Responsive />
+                <Mixins />
             </div>
         )
     }

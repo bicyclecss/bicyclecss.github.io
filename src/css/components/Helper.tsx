@@ -309,15 +309,31 @@ export default class Helper extends React.Component<{}, {}> {
                         </code>
                     </p>
                     <Code copyCode={
-                        ''
+                        '<div class="row text-center">\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border border-success bg-light-gray p-20">.border.border-success</div>\n' +
+                        '    </div>\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border border-warning bg-light-gray p-20">.border.border-warning</div>\n' +
+                        '    </div>\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border border-error bg-light-gray p-20">.border.border-error</div>\n' +
+                        '    </div>\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border border-secondary bg-light-gray p-20">.border.border-secondary</div>\n' +
+                        '    </div>\n' +
+                        '    <div class="column">\n' +
+                        '        <div class="border border-pink bg-light-gray p-20">.border.border-pink</div>\n' +
+                        '    </div>\n' +
+                        '</div>'
                     }>
                         <Tag className="row text-center">
                             <Tag className="column">
                                 <Tag className="border border-success bg-light-gray p-20">.border.border-success</Tag>
                             </Tag>
-                            <div className="column">
+                            <Tag className="column">
                                 <Tag className="border border-warning bg-light-gray p-20">.border.border-warning</Tag>
-                            </div>
+                            </Tag>
                             <Tag className="column">
                                 <Tag className="border border-error bg-light-gray p-20">.border.border-error</Tag>
                             </Tag>

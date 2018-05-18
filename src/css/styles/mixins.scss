@@ -1,0 +1,45 @@
+.arrow-top {
+  @include arrow(20, 10, $primary, t);
+}
+
+.arrow-right {
+  @include arrow(10, 20, $secondary, r);
+}
+
+.arrow-bottom {
+  @include arrow(20, 10, $default, b);
+}
+
+.arrow-left {
+  @include arrow(10, 20, $success, l);
+}
+
+.arrow-top-left {
+  @include arrow(15, 15, $warning, tl);
+}
+
+.arrow-top-right {
+  @include arrow(15, 15, $error, tr);
+}
+
+.arrow-bottom-right {
+  @include arrow(15, 15, $info, br);
+}
+
+.arrow-bottom-left {
+  @include arrow(15, 15, $orange, bl);
+}
+
+.input {
+  width: 100%;
+  padding: 0 15px;
+  font-size: 18px;
+  height: 45px;
+  border: 1px solid $medium-gray;
+  color: $black;
+
+  @include placeholder() {
+    color: $default;
+    font-size: 15px;
+  }
+}
