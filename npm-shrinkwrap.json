@@ -31,6 +31,15 @@
         "@types/react": "16.3.14"
       }
     },
+    "@types/react-loadable": {
+      "version": "5.4.0",
+      "resolved": "https://registry.npmjs.org/@types/react-loadable/-/react-loadable-5.4.0.tgz",
+      "integrity": "sha512-4vn8NL52OVRj8HMzpmtbLXw5Mar4PoBJF6+XuhO668/OfjCskuC1akzqxk/ktqjQwEGzS4Ss8zkTmjk5PQ07pQ==",
+      "requires": {
+        "@types/react": "16.3.14",
+        "@types/webpack": "4.4.0"
+      }
+    },
     "@types/react-router": {
       "version": "4.0.25",
       "resolved": "https://registry.npmjs.org/@types/react-router/-/react-router-4.0.25.tgz",
@@ -56,6 +65,44 @@
       "integrity": "sha512-Id2MtQcmOgLymqqLqg1VjzNpN7O5vGoF47h3s7jxhzqWdMCtk2GwxFUqcKbGrRmHzzQGyRatfG8yahonIys74Q==",
       "requires": {
         "@types/react": "16.3.14"
+      }
+    },
+    "@types/tapable": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/@types/tapable/-/tapable-1.0.2.tgz",
+      "integrity": "sha512-42zEJkBpNfMEAvWR5WlwtTH22oDzcMjFsL9gDGExwF8X8WvAiw7Vwop7hPw03QT8TKfec83LwbHj6SvpqM4ELQ=="
+    },
+    "@types/uglify-js": {
+      "version": "3.0.2",
+      "resolved": "https://registry.npmjs.org/@types/uglify-js/-/uglify-js-3.0.2.tgz",
+      "integrity": "sha512-o8hU2+4xsyGC27Vujoklvxl88Ew5zmJuTBYMX1Uro2rYUt4HEFJKL6fuq8aGykvS+ssIsIzerWWP2DRxonownQ==",
+      "requires": {
+        "source-map": "0.6.1"
+      },
+      "dependencies": {
+        "source-map": {
+          "version": "0.6.1",
+          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz",
+          "integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g=="
+        }
+      }
+    },
+    "@types/webpack": {
+      "version": "4.4.0",
+      "resolved": "https://registry.npmjs.org/@types/webpack/-/webpack-4.4.0.tgz",
+      "integrity": "sha512-G7TXt4IRP7NTQO8R8QyDN7YwkQzlxjiKhA+z7W5FvkGbK7kIdOUtW2e7AE2w33Q10uphyG+vr8pfRy7wBWLmsA==",
+      "requires": {
+        "@types/node": "10.0.8",
+        "@types/tapable": "1.0.2",
+        "@types/uglify-js": "3.0.2",
+        "source-map": "0.6.1"
+      },
+      "dependencies": {
+        "source-map": {
+          "version": "0.6.1",
+          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz",
+          "integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g=="
+        }
       }
     },
     "abbrev": {
@@ -10285,6 +10332,14 @@
         "fbjs": "0.8.16",
         "loose-envify": "1.3.1",
         "object-assign": "4.1.1",
+        "prop-types": "15.6.1"
+      }
+    },
+    "react-loadable": {
+      "version": "5.4.0",
+      "resolved": "https://registry.npmjs.org/react-loadable/-/react-loadable-5.4.0.tgz",
+      "integrity": "sha512-HAFWL3aLB9dQA6OfGr7ACDNn/mv8jPUmBvXqrhJZfZgRhZysyNW8RupvGUbeGkTO+9frH1LTdJmKWphZENhlJg==",
+      "requires": {
         "prop-types": "15.6.1"
       }
     },

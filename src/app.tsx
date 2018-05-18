@@ -4,9 +4,9 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import PageLoader from './common/components/PageLoader'
 import Layout from './common/layout/components/Layout'
-import Main from './main/components/Main'
-import GettingStarted from './gettingStarted/components/GettingStarted'
-import Css from './css/components/Css'
+import Main from './main/async/MainAsync'
+import GettingStarted from './gettingStarted/async/GettingStartedAsync'
+import Css from './css/async/CssAsync'
 
 import './common/styles/base'
 
@@ -53,6 +53,13 @@ class Content extends React.Component<{}, State> {
             isShowPageLoader: false
         })
     }
+}
+
+declare global {
+    interface System {
+        import (request: string): Promise<any>
+    }
+    const System: System
 }
 
 ReactDOM.render(
