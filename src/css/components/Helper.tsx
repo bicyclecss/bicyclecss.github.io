@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 const classNames = require('classnames/bind')
+const SmoothScroll = require('smooth-scroll')
 
 import Code from 'common/components/Code'
 import Tag from 'common/components/Tag'
@@ -15,19 +16,17 @@ export default class Helper extends React.Component<{}, {}> {
             <section id="helper" className="section">
                 <div className="container">
                     <div className="text-center mb-70">
-                        <span className="text-default text-uppercase">Project-wide use</span>
+                        <span className="text-default text-uppercase">Often used</span>
                         <h2 className="text-center text-primary mt-20">Helper Classes</h2>
-                        <p className="font-18">Some other helper classes</p>
+                        <p className="font-18">A collection of classes that we so often do not have enough</p>
                     </div>
                     <h3>Margin &amp; padding</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, eaque enim esse
-                        exercitationem obcaecati placeat rem veniam vero. Adipisci exercitationem laudantium
-                        mollitia reprehenderit sunt temporibus <code className="code">.m-</code>,
-                        <code className="code">.mt-</code>, <code className="code">.mr-</code>,
-                        <code className="code">.mb-</code>, <code className="code">.ml-</code>,
-                        <code className="code">.p-</code>,<code className="code">.pt-</code>,
-                        <code className="code">.pr-</code>,<code className="code">.pb-</code>,
+                        You can specify margins anf paddings with the help of classes: <code className="code">.m-</code>,{' '}
+                        <code className="code">.mt-</code>, <code className="code">.mr-</code>,{' '}
+                        <code className="code">.mb-</code>, <code className="code">.ml-</code>,{' '}
+                        <code className="code">.p-</code>, <code className="code">.pt-</code>,{' '}
+                        <code className="code">.pr-</code>,<code className="code">.pb-</code>,{' '}
                         <code className="code">.pl-</code> <br />
                         <strong>Available values:</strong> 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150;
                     </p>
@@ -131,7 +130,10 @@ export default class Helper extends React.Component<{}, {}> {
                             </Code>
                         </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, incidunt.</p>
+                    <p>
+                        These classes are also responsive, you can see more{' '}
+                        <a href="" onClick={(e: any) => this.handleScrollTo(e, '#marginPaddingResponsive')}>here</a>.
+                    </p>
                     <div className="row mb-30">
                         <div className="column xs-12 lg-8">
                             <Code copyCode={
@@ -149,8 +151,7 @@ export default class Helper extends React.Component<{}, {}> {
                     </div>
                     <h3>Background color</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum
-                        laboriosam molestias reiciendis <code className="code">.bg-</code>
+                        You can set any background color from the color palette using the class <code className="code">.bg-</code>.
                     </p>
                     <div className="row mb-30">
                         <div className="column xs-12 lg-8">
@@ -194,12 +195,15 @@ export default class Helper extends React.Component<{}, {}> {
                     </div>
                     <h3>Display</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur enim
-                        perferendis quo repudiandae sapiente voluptatibus. <br/>
+                        Classes for the display property are available. Also you can see responsive classes{' '}
+                        <a href="" onClick={(e: any) => this.handleScrollTo(e, '#displayResponsive')}>here</a>. <br/>
                         <strong>Available values:</strong>
-                        <code className="code">.display-inline</code>, <code className="code">.display-inline-block</code>,
-                        <code className="code">.display-block</code>, <code className="code">.display-table</code>,
-                        <code className="code">.display-table-cell</code>, <code className="code">.display-flex</code>,
+                        <code className="code">.display-inline</code>,{' '}
+                        <code className="code">.display-inline-block</code>,{' '}
+                        <code className="code">.display-block</code>,{' '}
+                        <code className="code">.display-table</code>,{' '}
+                        <code className="code">.display-table-cell</code>,{' '}
+                        <code className="code">.display-flex</code>,{' '}
                         <code className="code">.display-inline-flex</code>.
                     </p>
                     <div className="row mb-30">
@@ -222,7 +226,7 @@ export default class Helper extends React.Component<{}, {}> {
                     </div>
                     <h3>Position</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, magnam. <br/>
+                        Set the position for the items. <br/>
                         <strong>Available values:</strong>
                         <code className="code">.position-static</code>, <code className="code">.position-relative</code>,
                         <code className="code">.position-absolute</code>, <code className="code">.position-fixed</code>.
@@ -240,7 +244,7 @@ export default class Helper extends React.Component<{}, {}> {
                     </Code>
                     <h3>Border</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, magnam. <br/>
+                        You can add a frame to the entire element or the necessary sides. <br/>
                         <strong>Borders:</strong>
                         <code className="code">.border</code>, <code className="code">.border-top</code>,
                         <code className="code">.border-left</code>, <code className="code">.border-right</code>,
@@ -301,7 +305,7 @@ export default class Helper extends React.Component<{}, {}> {
                         </div>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, recusandae
+                        You can make any color of the frame from the palette, add class{' '}
                         <code className="code">
                             .border-<span className="text-default">{'#{'}</span>
                             <span className="text-purple">$color</span>
@@ -345,7 +349,7 @@ export default class Helper extends React.Component<{}, {}> {
                             </Tag>
                         </Tag>
                     </Code>
-                    <div className="row mb-30 text-center">
+                    <div className="row mb-60 text-center">
                         <div className="column">
                             <div className="border border-success bg-light-gray p-20">.border.border-success</div>
                         </div>
@@ -365,5 +369,16 @@ export default class Helper extends React.Component<{}, {}> {
                 </div>
             </section>
         )
+    }
+
+    private handleScrollTo = (e: any, anchor: string) => {
+        e.preventDefault();
+
+        const scroll = new SmoothScroll()
+        const top = (document.querySelector(anchor) as any).offsetTop - 100
+
+        scroll.animateScroll(top, {
+            easing: 'easeInOutQuart'
+        })
     }
 }

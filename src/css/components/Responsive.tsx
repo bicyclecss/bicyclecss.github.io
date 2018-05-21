@@ -14,11 +14,10 @@ export default class Responsive extends React.Component<{}, {}> {
                     <div className="text-center mb-70">
                         <span className="text-default text-uppercase">Responsive classes</span>
                         <h2 className="text-center text-primary mt-20">Responsive</h2>
-                        <p className="font-18">Some other responsive classes</p>
+                        <p className="font-18">Easy creation of a responsive interface</p>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum facere fuga
-                        mollitia porro quos voluptatem?{' '}
+                        To create a responsive interface, use a mixin{' '}
                         <code className="code">
                             @mixin
                             <span className="text-blue"> from-screen-size</span>
@@ -142,11 +141,11 @@ export default class Responsive extends React.Component<{}, {}> {
                         </div>
                     </div>
                     <h3>Classes</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quas?</p>
+                    <p>Responsive is available for margin, padding, display and flex classes.</p>
                     <p>
                         <span className="text-purple">$number</span>: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150;
                     </p>
-                    <h4>Margin</h4>
+                    <h4 id="marginPaddingResponsive">Margin</h4>
                     <div className="row mb-30">
                         {screenSizes.map((screen: string, index: number) => (
                             <div key={index} className="column xs-12 md-3">
@@ -244,7 +243,7 @@ export default class Responsive extends React.Component<{}, {}> {
                             </div>
                         ))}
                     </div>
-                    <h4>Display</h4>
+                    <h4 id="displayResponsive">Display</h4>
                     <div className="row mb-30">
                         {screenSizes.map((screen: string, index: number) => (
                             <div key={index} className="column xs-12 md-3">
@@ -332,120 +331,123 @@ export default class Responsive extends React.Component<{}, {}> {
                     </div>
                     <h3>Headings</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, repellat.
+                        For the size of the headers there is a map that you can override by changing the values ​​or
+                        adding new breakpoints.
                     </p>
-                    <Code copyCode={
-                        '$header-font-sizes: (\n' +
-                        '    xs: (\n' +
-                        '        h1: 40,\n' +
-                        '        h2: 30,\n' +
-                        '        h3: 24,\n' +
-                        '        h4: 18,\n' +
-                        '        h5: 17,\n' +
-                        '        h6: 16\n' +
-                        '    ),\n' +
-                        '    sm: (\n' +
-                        '        h1: 60,\n' +
-                        '        h2: 48,\n' +
-                        '        h3: 31,\n' +
-                        '        h4: 25,\n' +
-                        '        h5: 20,\n' +
-                        '        h6: 16\n' +
-                        '    )\n' +
-                        ');'
-                    }>
-                        <span className="text-red">$header-font-sizes</span>
-                        <span className="text-default">: (</span>
-                        <blockquote>
-                            <div>
-                                <span className="text-blue">xs</span>
-                                <span className="text-default">: (</span>
-                                <blockquote>
-                                    <div>
-                                        <span className="text-blue">h1</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">40</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h2</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">30</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h3</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">24</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h4</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">18</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h5</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">17</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h6</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">16</span>
-                                    </div>
-                                </blockquote>
-                                <span className="text-default">)</span>
-                                <span className="text-red">,</span>
-                            </div>
-                            <div>
-                                <span className="text-blue">sm</span>
-                                <span className="text-default">: (</span>
-                                <blockquote>
-                                    <div>
-                                        <span className="text-blue">h1</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">60</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h2</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">48</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h3</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">31</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h4</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">25</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h5</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">20</span>
-                                        <span className="text-red">,</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-blue">h6</span>
-                                        <span className="text-default">: </span>
-                                        <span className="text-purple">16</span>
-                                    </div>
-                                </blockquote>
-                                <span className="text-default">)</span>
-                            </div>
-                        </blockquote>
-                        <span className="text-default">)</span>
-                        <span className="text-red">;</span>
-                    </Code>
+                    <div className="mb-30">
+                        <Code copyCode={
+                            '$header-font-sizes: (\n' +
+                            '    xs: (\n' +
+                            '        h1: 40,\n' +
+                            '        h2: 30,\n' +
+                            '        h3: 24,\n' +
+                            '        h4: 18,\n' +
+                            '        h5: 17,\n' +
+                            '        h6: 16\n' +
+                            '    ),\n' +
+                            '    sm: (\n' +
+                            '        h1: 60,\n' +
+                            '        h2: 48,\n' +
+                            '        h3: 31,\n' +
+                            '        h4: 25,\n' +
+                            '        h5: 20,\n' +
+                            '        h6: 16\n' +
+                            '    )\n' +
+                            ');'
+                        }>
+                            <span className="text-red">$header-font-sizes</span>
+                            <span className="text-default">: (</span>
+                            <blockquote>
+                                <div>
+                                    <span className="text-blue">xs</span>
+                                    <span className="text-default">: (</span>
+                                    <blockquote>
+                                        <div>
+                                            <span className="text-blue">h1</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">40</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h2</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">30</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h3</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">24</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h4</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">18</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h5</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">17</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h6</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">16</span>
+                                        </div>
+                                    </blockquote>
+                                    <span className="text-default">)</span>
+                                    <span className="text-red">,</span>
+                                </div>
+                                <div>
+                                    <span className="text-blue">sm</span>
+                                    <span className="text-default">: (</span>
+                                    <blockquote>
+                                        <div>
+                                            <span className="text-blue">h1</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">60</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h2</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">48</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h3</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">31</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h4</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">25</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h5</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">20</span>
+                                            <span className="text-red">,</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-blue">h6</span>
+                                            <span className="text-default">: </span>
+                                            <span className="text-purple">16</span>
+                                        </div>
+                                    </blockquote>
+                                    <span className="text-default">)</span>
+                                </div>
+                            </blockquote>
+                            <span className="text-default">)</span>
+                            <span className="text-red">;</span>
+                        </Code>
+                    </div>
                 </div>
             </section>
         )

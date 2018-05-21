@@ -284,7 +284,7 @@ export default class Flex extends React.Component<{}, {}> {
         e.preventDefault();
 
         const scroll = new SmoothScroll()
-        const top = (document.querySelector(anchor) as any).offsetTop - 80
+        const top = (document.querySelector(anchor) as any).offsetTop - 100
 
         scroll.animateScroll(top, {
             easing: 'easeInOutQuart'

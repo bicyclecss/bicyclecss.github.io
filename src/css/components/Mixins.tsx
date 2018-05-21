@@ -14,15 +14,15 @@ export default class Mixins extends React.Component<{}, {}> {
             <section id="mixins" className="section">
                 <div className="container">
                     <div className="text-center mb-70">
-                        <span className="text-default text-uppercase">Project-wide use</span>
+                        <span className="text-default text-uppercase">Use mixins</span>
                         <h2 className="text-center text-primary mt-20">Mixins</h2>
-                        <p className="font-18">Some other mixins</p>
+                        <p className="font-18">Some mixins</p>
                     </div>
                     <h3>
                         Responsive mixins
                     </h3>
                     <p>
-                        You can user responsive mixins such as{' '}
+                        You can use responsive mixins such as{' '}
                         <code className="code text-nowrap">
                             @mixin
                             <span className="text-blue"> min-width</span>
@@ -129,8 +129,7 @@ export default class Mixins extends React.Component<{}, {}> {
                     </Code>
                     <h3>Arrow</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut, mollitia?
-                        Accusantium modi obcaecati vitae. {' '}
+                        Mixin for quick creation of arrows:{' '}
                         <code className="code">
                             @mixin
                             <span className="text-blue"> arrow</span>
@@ -211,7 +210,7 @@ export default class Mixins extends React.Component<{}, {}> {
                     </div>
                     <h3>Placeholder</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, rem!{' '}
+                        To specify the placeholder styles, use{' '}
                         <code className="code text-nowrap">
                             @mixin
                             <span className="text-blue"> placeholder</span>

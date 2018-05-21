@@ -12,7 +12,7 @@ export default class Footer extends React.Component<{}, {}> {
             <footer className={cx('footer')}>
                 <div className="container">
                     <h3 className="text-white">Bicycle</h3>
-                    <p>Small set of basic styles.</p>
+                    <p>Some set of basic styles.</p>
                 </div>
                 <div className={cx('copyright')}>
                     &copy; 2018 <a href="http://fandikova.ru" className="text-white">Olga Fandikova</a>
