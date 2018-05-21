@@ -105,6 +105,7 @@ export default class Layout extends React.Component<RouteProps, State> {
             const refElement = document.getElementById(hash)
 
             if (
+                refElement &&
                 refElement.offsetTop <= scrollTop + 80 &&
                 refElement.offsetTop + refElement.getBoundingClientRect().height > scrollTop + 80
             ) {
