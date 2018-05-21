@@ -27,11 +27,8 @@ export default class Header extends React.Component<Props, {}> {
                         <div className="column xs-12 md-6 pt-50 pt-lg-0">
                             <h1 className="text-white">Bicycle</h1>
                             <p className="mb-30">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita quod rem
-                                repellendus? A ad architecto assumenda atque autem consectetur consequatur culpa delectus
-                                dolor doloribus, ducimus ea, enim esse itaque minima molestiae mollitia nemo nobis placeat,
-                                porro possimus quae reiciendis repellat reprehenderit sapiente unde velit vitae!
-                                Doloribus enim impedit officia.
+                                This is a small set of basic styles that are most often used in projects.
+                                Bicycle does not contain anything superfluous and easy to use.
                             </p>
                             <Button color="pink-orange" className="mr-15 mb-15">Download</Button>
                             <Button color="pink-purple" onClick={() => history.push('/getting-started')}>Getting started</Button>

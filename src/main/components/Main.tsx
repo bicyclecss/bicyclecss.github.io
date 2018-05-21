@@ -35,10 +35,11 @@ export default class Main extends React.Component<RouterProps, State> {
                 <Header navStyle={this.state.navStyle} history={this.props.history} />
                 <section className="section">
                     <div className="container">
-                        <h2 className="text-center text-primary">Lorem ipsum dolor</h2>
+                        <h2 className="text-center text-primary">Features</h2>
                         <p className="text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem, dolorum
-                            eum fuga hic labore magni nobis numquam sunt totam?
+                            If you need a set of helper classes, responsiveness and grid, then use a bicycle.
+                            You can easily manage layout, text styles, colors, margins and paddings,
+                            and quickly customize it for your own purposes.
                         </p>
                         <div className="row mt-90">
                             <div className="column xs-12 md-6 lg-4 flex mb-30">
@@ -47,7 +48,7 @@ export default class Main extends React.Component<RouterProps, State> {
                                 </div>
                                 <div>
                                     <h4>Simple to Use</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quas.</p>
+                                    <p>Class names are intuitive and easy to remember.</p>
                                 </div>
                             </div>
                             <div className="column xs-12 md-6 lg-4 flex mb-30">
@@ -56,7 +57,7 @@ export default class Main extends React.Component<RouterProps, State> {
                                 </div>
                                 <div>
                                     <h4>The most necessary styles</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quas.</p>
+                                    <p>This contains the styles that are used in each project.</p>
                                 </div>
                             </div>
                             <div className="column xs-12 md-6 lg-4 flex mb-30">
@@ -65,7 +66,7 @@ export default class Main extends React.Component<RouterProps, State> {
                                 </div>
                                 <div>
                                     <h4>Using SCSS</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quas.</p>
+                                    <p>You can use the source scss files and mixins.</p>
                                 </div>
                             </div>
                             <div className="column xs-12 md-6 lg-4 flex mb-30">
@@ -74,7 +75,7 @@ export default class Main extends React.Component<RouterProps, State> {
                                 </div>
                                 <div>
                                     <h4>Responsive design</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quas.</p>
+                                    <p>There are classes and mixins for responsive design.</p>
                                 </div>
                             </div>
                             <div className="column xs-12 md-6 lg-4 flex mb-30">
@@ -83,7 +84,7 @@ export default class Main extends React.Component<RouterProps, State> {
                                 </div>
                                 <div>
                                     <h4>Easily customizable</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quas.</p>
+                                    <p>You can override the variables for your project.</p>
                                 </div>
                             </div>
                             <div className="column xs-12 md-6 lg-4 flex mb-30">
@@ -92,7 +93,7 @@ export default class Main extends React.Component<RouterProps, State> {
                                 </div>
                                 <div>
                                     <h4>Made with love</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quas.</p>
+                                    <p>There is a part of the soul.</p>
                                 </div>
                             </div>
                         </div>
