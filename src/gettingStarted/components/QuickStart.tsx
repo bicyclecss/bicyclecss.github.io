@@ -10,7 +10,7 @@ export default class QuickStart extends React.Component<{}, {}> {
             <section id="quickStart" className="section">
                 <div className="container">
                     <div className="text-center mb-70">
-                        <span className="text-default text-uppercase">Lorem ipsum dolor</span>
+                        <span className="text-default text-uppercase">How to use it</span>
                         <h2 className="text-center text-primary mt-20">Quick Start</h2>
                         <p className="font-18">Now it's time to start editing some lines of code</p>
                     </div>
@@ -30,9 +30,8 @@ export default class QuickStart extends React.Component<{}, {}> {
                             <span className="text-red">{'>'}</span>
                         </div>
                     </Code>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequatur corporis culpa eum
-                    ipsum laboriosam minima numquam quasi repellat! Asperiores consectetur fugiat magni modi quia
-                    rerum velit vero voluptatibus!
+                    If you want to customize the bicycle, connect bicycle.scss and add before it a file with
+                    overridden variables.
                     <Code copyCode={'@import "your-variables";\n@import "bicycle/scss/bicycle";'}>
                         <div>
                             <span className="text-red">@import </span>
@@ -49,8 +48,7 @@ export default class QuickStart extends React.Component<{}, {}> {
                             <span className="text-red">;</span>
                         </div>
                     </Code>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Architecto dolores facilis minus mollitia possimus quia?
+                    In order to use variables and mixins in other scss file when building with webpack use this code:
                     <Code copyCode={'{\n loader: \'sass-loader\',\n options: {\n sourceMap: true,\n' +
                     'data: \'@import "bicycle/scss/common/variables";@import "bicycle/scss/common/mixins";\',\n' +
                     'includePaths: [\n path.resolve(__dirname, \'./src\')\n]\n}\n}'}>

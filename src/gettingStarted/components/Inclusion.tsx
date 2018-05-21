@@ -14,7 +14,7 @@ export default class Inclusion extends React.Component<{}, {}> {
                     <div className="text-center mb-70">
                         <span className="text-default text-uppercase">Unboxing</span>
                         <h2 className="text-center text-primary mt-20">What's Included</h2>
-                        <p className="font-18">Checkout the files that you'll see upon downloading</p>
+                        <p className="font-18">Files that you'll see upon downloading</p>
                     </div>
                     <p>
                         Once you download the template, you can see a folder with several files and sub folders.
@@ -32,19 +32,19 @@ export default class Inclusion extends React.Component<{}, {}> {
                                             <ul>
                                                 <li className={cx('is-file')}>
                                                     <span>_common.scss</span>
-                                                    <i>Minified version of all required CSS files</i>
+                                                    <i>Styles for some html tags</i>
                                                 </li>
                                                 <li className={cx('is-file')}>
                                                     <span>_mixins.scss</span>
-                                                    <i>Minified version of all required CSS files</i>
+                                                    <i>A set of mixins</i>
                                                 </li>
                                                 <li className={cx('is-file')}>
                                                     <span>_normalize.scss</span>
-                                                    <i>Minified version of all required CSS files</i>
+                                                    <i>Reset styles</i>
                                                 </li>
                                                 <li className={cx('is-file')}>
                                                     <span>_variables.scss</span>
-                                                    <i>Minified version of all required CSS files</i>
+                                                    <i>Variables for defining key styles</i>
                                                 </li>
                                             </ul>
                                         </li>
@@ -62,7 +62,7 @@ export default class Inclusion extends React.Component<{}, {}> {
                                         </li>
                                         <li className={cx('is-file')}>
                                             <span>bicycle.scss</span>
-                                            <i>Minified version of all required CSS files</i>
+                                            <i>Main SCSS file</i>
                                         </li>
                                     </ul>
                                 </li>
@@ -71,11 +71,11 @@ export default class Inclusion extends React.Component<{}, {}> {
                                     <ul>
                                         <li className={cx('is-file')}>
                                             <span>bicycle.css</span>
-                                            <i>Minified version of all required CSS files</i>
+                                            <i>Main CSS file</i>
                                         </li>
                                         <li className={cx('is-file')}>
                                             <span>bicycle.min.css</span>
-                                            <i>Minified version of all required CSS files</i>
+                                            <i>Minified version of all required CSS file</i>
                                         </li>
                                     </ul>
                                 </li>

@@ -12,8 +12,7 @@ export default class GettingStarted extends React.Component<{}, {}> {
         return (
             <div>
                 <Banner title="Getting started" color="success">
-                    An introduction to Bicycle, meet starter page,
-                    quickly start developing your documentation, and more.
+                    An introduction to Bicycle and quickly start developing.
                 </Banner>
                 <Inclusion />
                 <QuickStart />
