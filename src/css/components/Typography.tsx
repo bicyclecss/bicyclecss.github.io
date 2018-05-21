@@ -23,25 +23,25 @@ export default class Typography extends React.Component<{}, {}> {
                     <div className="row mb-30">
                         <div className="column xs-12 lg-8">
                             <Code copyCode={
-                                '<h1>h1 Заголовок</h1>\n <h2>h2 Заголовок</h2>\n' +
-                                '<h3>h3 Заголовок</h3>\n <h4>h4 Заголовок</h4>\n <h5>h5 Заголовок</h5>\n' +
-                                '<h6>h6 Заголовок</h6>'
+                                '<h1>h1 heading</h1>\n <h2>h2 heading</h2>\n' +
+                                '<h3>h3 heading</h3>\n <h4>h4 heading</h4>\n <h5>h5 heading</h5>\n' +
+                                '<h6>h6 heading</h6>'
                             }>
-                                <Tag name="h1">h1 Заголовок</Tag>
-                                <Tag name="h2">h2 Заголовок</Tag>
-                                <Tag name="h3">h3 Заголовок</Tag>
-                                <Tag name="h4">h4 Заголовок</Tag>
-                                <Tag name="h5">h5 Заголовок</Tag>
-                                <Tag name="h6">h6 Заголовок</Tag>
+                                <Tag name="h1">h1 heading</Tag>
+                                <Tag name="h2">h2 heading</Tag>
+                                <Tag name="h3">h3 heading</Tag>
+                                <Tag name="h4">h4 heading</Tag>
+                                <Tag name="h5">h5 heading</Tag>
+                                <Tag name="h6">h6 heading</Tag>
                             </Code>
                         </div>
                         <div className="column xs-12 lg-4">
-                            <h1>h1 Заголовок</h1>
-                            <h2>h2 Заголовок</h2>
-                            <h3>h3 Заголовок</h3>
-                            <h4>h4 Заголовок</h4>
-                            <h5>h5 Заголовок</h5>
-                            <h6>h6 Заголовок</h6>
+                            <h1>h1 heading</h1>
+                            <h2>h2 heading</h2>
+                            <h3>h3 heading</h3>
+                            <h4>h4 heading</h4>
+                            <h5>h5 heading</h5>
+                            <h6>h6 heading</h6>
                         </div>
                     </div>
                     <h3>Text colors</h3>
