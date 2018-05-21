@@ -15,14 +15,15 @@ export default class Grid extends React.Component<{}, {}> {
             <section id="grid" className="section">
                 <div className="container">
                     <div className="text-center mb-70">
-                        <span className="text-default text-uppercase">Lorem ipsum</span>
+                        <span className="text-default text-uppercase">Mobile-first flexbox grid</span>
                         <h2 className="text-center text-primary mt-20">Grid</h2>
-                        <p className="font-18">Use the following tags and classes to write a better documentation</p>
+                        <p className="font-18">Use our mobile-first flexbox grid to build layouts of all shapes and sizes</p>
                     </div>
                     <h3>Grid system</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur aut cum,
-                        fugit ipsam maiores minima quasi quibusdam reprehenderit voluptatem.
+                        The grid consists of a container, rows and columns. The sizes of columns are set by means
+                        of responsive classes <code className="code">.xs-</code>, <code className="code">.sm-</code>,{' '}
+                        <code className="code">.md-</code>, <code className="code">.lg-</code>.
                     </p>
                     <div className="mb-30">
                         <Code copyCode={
@@ -72,10 +73,13 @@ export default class Grid extends React.Component<{}, {}> {
                     </div>
                     <h3>Breakpoints</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem cum debitis et ex
-                        nisi possimus repellendus veritatis! Aliquam dolorum eum, maiores minima sapiente tempore.
+                        You can change the parameters of the grid. For example, if you add{' '}
+                        <span className="text-red">xl</span><span className="text-default">: </span>
+                        <span className="text-purple">1600</span> to the{' '}
+                        <code className="code">$screes-sizes</code> map, then <code className="code">.xl-</code>
+                        classes will also be available.
                     </p>
-                    <div className="row">
+                    <div className="row mb-30">
                         <div className="column xs-12 lg-6">
                             <Code copyCode={
                                 '$gutter:      15 !default;\n' +

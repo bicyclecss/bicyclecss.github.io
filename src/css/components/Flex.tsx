@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+const SmoothScroll = require('smooth-scroll')
+
 import Code from 'common/components/Code'
 import Tag from 'common/components/Tag'
 
@@ -11,19 +13,20 @@ export default class Flex extends React.Component<{}, {}> {
             <section id="flexbox" className="section">
                 <div className="container">
                     <div className="text-center mb-70">
-                        <span className="text-default text-uppercase">Flexbox</span>
+                        <span className="text-default text-uppercase">Flexbox utilities</span>
                         <h2 className="text-center text-primary mt-20">Flexbox</h2>
-                        <p className="font-18">Some other responsive classes</p>
+                        <p className="font-18">Simple use of flexbox capabilities</p>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto debitis
-                        dolores impedit iure iusto libero magni neque obcaecati suscipit <code className="code">.flex</code>
+                        To determine the flexbox container, use the <code className="code">.flex</code> class.
                     </p>
                     <h3>Flex direction</h3>
                     <p>
-                        Lorem ipsum dolor sit amet
-                        <code className="code">.flex-direction-row</code>, <code className="code">.flex-direction-column</code>,
-                        <code className="code">.flex-direction-row-reverse</code>, <code className="code">.flex-direction-column-reverse</code>.
+                        Direction can be specified using classes:{' '}
+                        <code className="code">.flex-direction-row</code>,{' '}
+                        <code className="code">.flex-direction-column</code>,{' '}
+                        <code className="code">.flex-direction-row-reverse</code>,{' '}
+                        <code className="code">.flex-direction-column-reverse</code>.
                     </p>
                     <div className="row mb-30">
                         <div className="column xs-12 lg-8">
@@ -52,8 +55,9 @@ export default class Flex extends React.Component<{}, {}> {
                     </div>
                     <h3>Flex wrap</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, quo
-                        <code className="code">.flex-wrap</code>, <code className="code">.flex-nowrap</code>,
+                        Flex wrap is specified using classes:{' '}
+                        <code className="code">.flex-wrap</code>,{' '}
+                        <code className="code">.flex-nowrap</code>,{' '}
                         <code className="code">.flex-wrap-reverse</code>
                     </p>
                     <div className="row mb-30">
@@ -83,9 +87,11 @@ export default class Flex extends React.Component<{}, {}> {
                     </div>
                     <h3>Flex order</h3>
                     <p>
-                        Lorem ipsum dolor sit amet
-                        <code className="code">.flex-order-0</code>, <code className="code">.flex-order-1</code>,
-                        ... , <code className="code">.flex-order-9</code>, <code className="code">.flex-order-10</code>.
+                        To change the order of the elements, use numbers from 0 to 10.
+                        <code className="code">.flex-order-0</code>,{' '}
+                        <code className="code">.flex-order-1</code>,{' '}
+                        ... , <code className="code">.flex-order-9</code>,{' '}
+                        <code className="code">.flex-order-10</code>.
                     </p>
                     <div className="row mb-30">
                         <div className="column xs-12 lg-8">
@@ -119,9 +125,11 @@ export default class Flex extends React.Component<{}, {}> {
                     </div>
                     <h3>Flex grow</h3>
                     <p>
-                        Lorem ipsum dolor sit amet
-                        <code className="code">.flex-grow-0</code>, <code className="code">.flex-grow-1</code>,
-                        ... , <code className="code">.flex-grow-9</code>, <code className="code">.flex-grow-10</code>.
+                        To change the grow of the elements, use numbers from 0 to 10.
+                        <code className="code">.flex-grow-0</code>,{' '}
+                        <code className="code">.flex-grow-1</code>,{' '}
+                        ... , <code className="code">.flex-grow-9</code>,{' '}
+                        <code className="code">.flex-grow-10</code>.
 
                     </p>
                     <div className="row mb-30">
@@ -155,9 +163,11 @@ export default class Flex extends React.Component<{}, {}> {
                     </div>
                     <h3>Alignment</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, totam
-                        <code className="code">.justify-content-</code>, <code className="code">.align-content-</code>,
-                        <code className="code">.align-items-</code>, <code className="code">.align-self-</code>.
+                        For aligning child elements, there are classes:{' '}
+                        <code className="code">.justify-content-</code>,{' '}
+                        <code className="code">.align-content-</code>,{' '}
+                        <code className="code">.align-items-</code>,{' '}
+                        <code className="code">.align-self-</code>.
                     </p>
                     <div className="row mb-30">
                         <div className="column xs-12 lg-3">
@@ -222,7 +232,8 @@ export default class Flex extends React.Component<{}, {}> {
                         </div>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, voluptatem <a href="">link</a>.
+                        These classes are also responsive, you can see more{' '}
+                        <a href="" onClick={(e: any) => this.handleScrollTo(e, '#flexResponsive')}>here</a>.
                     </p>
                     <Code copyCode={
                         '<div class="flex flex-direction-column flex-direction-md-row">\n' +
@@ -253,7 +264,7 @@ export default class Flex extends React.Component<{}, {}> {
                             Flex item 2
                         </div>
                     </div>
-                    <div className="flex flex-direction-column flex-direction-md-row justify-content-between align-items-center border border-medium-gray mb-15">
+                    <div className="flex flex-direction-column flex-direction-md-row justify-content-between align-items-center border border-medium-gray mb-60">
                         <div className="pt-10 pb-10 pl-50 pr-50 border border-medium-gray bg-light-gray m-15 flex-order-3">
                             Flex item 1
                         </div>
@@ -267,5 +278,16 @@ export default class Flex extends React.Component<{}, {}> {
                 </div>
             </section>
         )
+    }
+
+    private handleScrollTo = (e: any, anchor: string) => {
+        e.preventDefault();
+
+        const scroll = new SmoothScroll()
+        const top = (document.querySelector(anchor) as any).offsetTop - 80
+
+        scroll.animateScroll(top, {
+            easing: 'easeInOutQuart'
+        })
     }
 }

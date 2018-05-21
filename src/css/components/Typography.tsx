@@ -13,7 +13,7 @@ export default class Typography extends React.Component<{}, {}> {
                     <div className="text-center mb-70">
                         <span className="text-default text-uppercase">Writing power</span>
                         <h2 className="text-center text-primary mt-20">Typography</h2>
-                        <p className="font-18">Use the following tags and classes to write a better documentation</p>
+                        <p className="font-18">Use the following tags and classes for text styling</p>
                     </div>
                     <h3>Headings</h3>
                     <p>
@@ -117,7 +117,7 @@ export default class Typography extends React.Component<{}, {}> {
                     </div>
                     <h3>Font size</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, necessitatibus. <br />
+                        Use the <code className="code">.font-</code> class to set the font size. <br />
                         <strong>Available font sizes:</strong> 9 - 30, 32, 36, 38, 40, 42, 44, 46, 48, 54, 60, 64, 72, 78, 90, 100, 150, 200.
                     </p>
                     <div className="row mb-30">
@@ -140,7 +140,7 @@ export default class Typography extends React.Component<{}, {}> {
                     </div>
                     <h3>Font weight</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, necessitatibus. <br />
+                        Use the <code className="code">.font-weight-</code> class to set the font weight. <br />
                         <strong>Available font weights:</strong> 100 - 900.
                     </p>
                     <div className="row mb-30">
@@ -162,7 +162,12 @@ export default class Typography extends React.Component<{}, {}> {
                         </div>
                     </div>
                     <h3>Text align</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quisquam!</p>
+                    <p>
+                        There are classes for text alignment such as{' '}
+                        <code className="code">.text-left</code>,{' '}
+                        <code className="code">.text-center</code>,{' '}
+                        <code className="code">.text-right</code>.
+                    </p>
                     <div className="row mb-30">
                         <div className="column xs-12 lg-8">
                             <Code copyCode={
@@ -182,7 +187,13 @@ export default class Typography extends React.Component<{}, {}> {
                         </div>
                     </div>
                     <h3>Text transform</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quisquam!</p>
+                    <p>
+                        for text transformation use{' '}
+                        <code className="code">.text-lowercase</code>,{' '}
+                        <code className="code">.text-uppercase</code>,{' '}
+                        <code className="code">.text-capitalize</code>,{' '}
+                        <code className="code">.text-transform-none</code>.
+                    </p>
                     <div className="row mb-30">
                         <div className="column xs-12 lg-8">
                             <Code copyCode={
@@ -205,14 +216,17 @@ export default class Typography extends React.Component<{}, {}> {
                         </div>
                     </div>
                     <h3>Text wrapping</h3>
-                    <p>Prevent text from wrapping with a <code className="code">.text-nowrap</code> class.</p>
+                    <p>
+                        It is possible to make that the text was not wrap on other line by means of a class{' '}
+                        <code className="code">.text-nowrap</code> class.
+                    </p>
                     <div className="row mb-30">
                         <div className="column xs-12 lg-8">
                             <Code copyCode={
-                                '<div class="text-nowrap">Lorem ipsum dolor sit amet</div>'
+                                '<div class="text-nowrap">This text is not carried over to the next line</div>'
                             }>
                                 <Tag className="text-nowrap">
-                                    Lorem ipsum dolor sit amet
+                                    This text is not carried over to the next line
                                 </Tag>
                             </Code>
                         </div>
@@ -220,7 +234,7 @@ export default class Typography extends React.Component<{}, {}> {
                             <div className="row">
                                 <div className="column xs-6">
                                     <div className="p-10 text-nowrap border border-medium-gray bg-light-gray">
-                                        Lorem ipsum dolor sit amet
+                                        This text is not carried over to the next line
                                     </div>
                                 </div>
                             </div>

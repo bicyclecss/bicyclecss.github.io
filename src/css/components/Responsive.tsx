@@ -260,7 +260,7 @@ export default class Responsive extends React.Component<{}, {}> {
                             </div>
                         ))}
                     </div>
-                    <h4>Flex</h4>
+                    <h4 id="flexResponsive">Flex</h4>
                     <p>
                         <span className="text-purple">$dir</span>: row, column, row-reverse, column-reverse. <br/>
                         <span className="text-purple">$align</span>: start, end, center, between, around. <br/>
