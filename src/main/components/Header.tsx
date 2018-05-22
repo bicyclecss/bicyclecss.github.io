@@ -30,8 +30,19 @@ export default class Header extends React.Component<Props, {}> {
                                 This is a small set of basic styles that are most often used in projects.
                                 Bicycle does not contain anything superfluous and easy to use.
                             </p>
-                            <Button color="pink-orange" className="mr-15 mb-15">Download</Button>
-                            <Button color="pink-purple" onClick={() => history.push('/getting-started')}>Getting started</Button>
+                            <Button
+                                color="pink-orange"
+                                className="mr-15 mb-15"
+                                onClick={() => window.open('https://github.com/bicyclecss/bicycle', '_blank')}
+                            >
+                                Download
+                            </Button>
+                            <Button
+                                color="pink-purple"
+                                onClick={() => history.push('/getting-started')}
+                            >
+                                Getting started
+                            </Button>
                         </div>
                         <div className="column xs-12 md-6">
                             <img className={cx('img')} src={require('common/img/bicycle.svg')} alt=""/>

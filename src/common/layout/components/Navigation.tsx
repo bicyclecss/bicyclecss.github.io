@@ -55,7 +55,14 @@ export default class Navigation extends React.Component<Props, State> {
                                 <NavLink exact to="/css" activeClassName={cx('active')}>CSS</NavLink>
                             </li>
                             <li>
-                                <Button color="pink-orange" size="small" className={cx('nav-button')}>Download</Button>
+                                <Button
+                                    color="pink-orange"
+                                    size="small"
+                                    className={cx('nav-button')}
+                                    onClick={() => window.open('https://github.com/bicyclecss/bicycle', '_blank')}
+                                >
+                                    Download
+                                </Button>
                             </li>
                         </ul>
                     </div>
